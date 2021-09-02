@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Fragments.fragment_chat">
+
+    <FrameLayout
+        android:id="@+id/edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_activitychat_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:drawableRight="@drawable/ic_baseline_wifi_off_24"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/ConnectionERROR"
+            android:textColor="@color/secorange"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <!--        android:id="@+id/go_down"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="95dp"
+            android:padding="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="go_down"
+            android:scaleType="center"
+            android:src="@drawable/ic_not_found"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearTools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/edt_txt_send_message"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="6"
+                android:background="@drawable/edittextbackground"
+                android:hint="@string/new_message"
+                android:maxLength="100"
+                android:maxLines="5"
+                android:paddingHorizontal="15dp"
+                android:singleLine="false"
+                android:textColor="@color/secorange"
+                android:textColorHint="@color/darkgray" />
+
+            <ImageView
+                android:id="@+id/btn_send_message"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_send_24" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

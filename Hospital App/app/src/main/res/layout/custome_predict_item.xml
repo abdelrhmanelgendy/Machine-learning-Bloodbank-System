@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+   >
+
+    <RelativeLayout
+        android:id="@+id/custome_prediction_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+
+            android:src="@drawable/ic_def_prof" />
+
+        <TextView
+            android:id="@+id/Prediction_btnPredict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="25sp"
+android:layout_below="@id/prediction_item_txtName"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="0sp"
+
+            android:background="@color/red"
+            android:padding="4dp"
+            android:text="Predict"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textAlignment="textStart"
+            android:id="@+id/prediction_item_txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="15dp"
+
+            android:layout_toEndOf="@+id/userProImage"
+            android:text="Abdelrhman mosad"
+            android:textColor="@color/darkgray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prediction_item_txtBloodType"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prediction_item_txtName"
+            android:layout_marginTop="5dp"
+
+
+            android:layout_toStartOf="@+id/Prediction_btnPredict"
+            android:layout_toEndOf="@+id/userProImage"
+            android:text="AB+"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

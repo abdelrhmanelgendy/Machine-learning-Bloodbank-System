@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Fragments.fragment_donor">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:text="@string/donors"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/imageFilter"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_filter" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearFilter"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/purple_500"
+                android:elevation="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!--                <SearchView-->
+                <!--                    android:id="@+id/searcher"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_weight="2"-->
+                <!--                    android:queryHint="Search by name"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:theme="@style/mySpinnerItemStyle" />-->
+                <!--                -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/editSearcher"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.6"
+                    android:gravity="center"
+                    android:textColorHint="@color/white"
+                    app:boxStrokeWidth="0dp"
+                    app:hintTextColor="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:drawableStart="@drawable/ic_baseline_search_24"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:singleLine="true"
+                        android:background="@color/purple_500"
+                        android:hint="search by name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerBloodTypeFilter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1"
+                    android:background="@color/purple_500"
+                    android:entries="@array/Blood_types"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/mySpinnerItemStyle" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="45dp"
+                android:orientation="vertical">
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/txt_activitychat_connection"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:drawableRight="@drawable/ic_baseline_wifi_off_24"-->
+                <!--                android:fontFamily="sans-serif-light"-->
+                <!--                android:gravity="center"-->
+                <!--                android:text="@string/ConnectionERROR"-->
+                <!--                android:textColor="@color/secorange"-->
+                <!--                android:textSize="16sp"-->
+                <!--                android:visibility="gone" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleDonorsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imageRecycleEmpNull"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_not_found"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

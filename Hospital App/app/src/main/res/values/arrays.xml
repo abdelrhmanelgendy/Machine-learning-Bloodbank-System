@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Blood_types">
+    <item>Blood Type</item>
+    <item>A+</item>
+    <item>B+</item>
+    <item>O+</item>
+    <item>AB+</item>
+    <item>A-</item>
+    <item>B-</item>
+    <item>O-</item>
+    <item>AB-</item>
+    </string-array>
+
+    <string-array name="lang_array">
+        <item>Language</item>
+        <item>ar</item>
+        <item>en</item>
+    </string-array>
+</resources>

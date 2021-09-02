@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "226447773597",
+    "firebase_url": "https://mybloodbank-ed226.firebaseio.com",
+    "project_id": "mybloodbank-ed226",
+    "storage_bucket": "mybloodbank-ed226.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226447773597:android:6fd1a7fc3505aefca6a974",
+        "android_client_info": {
+          "package_name": "com.example.hospitalbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226447773597-9rg82oc75dcvc3s37fgr2b5mpqrd1ji5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxe8tN6Lt_0FC72HTCZfXw9DcwpGxeT_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226447773597-9rg82oc75dcvc3s37fgr2b5mpqrd1ji5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226447773597:android:6f860296678c848da6a974",
+        "android_client_info": {
+          "package_name": "com.example.mybloodbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226447773597-ieigu21bj8vp4h32olvm4p2bmtgqal6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mybloodbank",
+            "certificate_hash": "80da9cdac4fe1d96e0c48eee22e1fa234d5dada2"
+          }
+        },
+        {
+          "client_id": "226447773597-r6sjgntpramvi79g64s5m72283cklhi9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mybloodbank",
+            "certificate_hash": "69afc03830e8a839d4a339fcf3bded7ded48da0f"
+          }
+        },
+        {
+          "client_id": "226447773597-9rg82oc75dcvc3s37fgr2b5mpqrd1ji5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxe8tN6Lt_0FC72HTCZfXw9DcwpGxeT_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226447773597-9rg82oc75dcvc3s37fgr2b5mpqrd1ji5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
